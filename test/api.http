@@ -1,0 +1,45 @@
+###
+Post http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "username": "newuser01",
+    "password": "password01",
+    "firstname": "New",
+    "lastname": "User"
+}
+
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "username": "newuser02",
+    "password": "pw02",
+    "firstname": "user02",
+    "lastname": "User02"
+}
+
+###
+GET http://localhost:3000/api/roles
+
+###
+POST http://localhost:3000/api/roles
+Content-Type: application/json
+
+{
+    "name": "Manager01",
+    "description": "New Manager01"
+}
+
+###
+PUT http://localhost:3000/api/roles/3
+Content-Type: application/json
+
+{
+    "name": "Manager Updated",
+    "description": "Updated Manager Role"
+}
+
+###
+DELETE http://localhost:3000/api/roles/3
