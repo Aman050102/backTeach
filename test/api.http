@@ -47,6 +47,7 @@ Content-Type: application/json
 DELETE http://localhost:3000/api/roles/3
 
 
+
 ### Get all suppliers
 GET http://localhost:3000/api/suppliers
 
@@ -55,11 +56,11 @@ POST http://localhost:3000/api/suppliers
 Content-Type: application/json
 
 {
-    "Name": "Global Export Co., Ltd.",
-    "Contact": "John Doe",
-    "Address": "123 Sukhumvit Rd, Bangkok",
-    "Email": "contact@globalexp.com",
-    "Phone": "021234567"
+    "Name": "Phayao University",
+    "Contact": "Aman Alikae",
+    "Address": "Mueang Phayao, Phayao , Thailand,",
+    "Email": "aman.aleekae@gmail.com",
+    "Phone": "0945785806"
 }
 
 ### Update supplier
@@ -67,11 +68,11 @@ PUT http://localhost:3000/api/suppliers/1
 Content-Type: application/json
 
 {
-    "Name": "Global Export (Updated)",
+    "Name": "University of Phayao (Updated)",
     "Contact": "Jane Doe",
-    "Address": "456 Rama 9, Bangkok",
-    "Email": "jane@globalexp.com",
-    "Phone": "0819998888"
+    "Address": "19 Moo 2, Tambon Mae Ka, Mueang Phayao, Phayao 56000, Thailand,",
+    "Email": "67023086@up.ac.th",
+    "Phone": "0811302829"
 }
 
 ### Delete supplier

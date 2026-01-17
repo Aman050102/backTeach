@@ -20,7 +20,7 @@ const SupplierSchema = z.object({
     Contact: z.string().min(1, "กรุณากรอกชื่อผู้ติดต่อ"),
     Address: z.string().min(1, "กรุณากรอกที่อยู่"),
     Email: z.string().email("รูปแบบอีเมลไม่ถูกต้อง"),
-    Phone: z.string().min(9, "เบอร์โทรศัพท์ต้องมีอย่างน้อย 9 หลัก")
+    Phone: z.string().min(10, "เบอร์โทรศัพท์ต้องมีอย่างน้อย 10 หลัก")
 });
 
 // 1. GET All Suppliers
