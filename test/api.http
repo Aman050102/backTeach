@@ -2,6 +2,8 @@
 Post http://localhost:3000/api/users
 Content-Type: application/json
 
+
+
 {
     "username": "newuser01",
     "password": "password01",
@@ -43,3 +45,34 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:3000/api/roles/3
+
+
+### Get all suppliers
+GET http://localhost:3000/api/suppliers
+
+### Create a new supplier
+POST http://localhost:3000/api/suppliers
+Content-Type: application/json
+
+{
+    "Name": "Global Export Co., Ltd.",
+    "Contact": "John Doe",
+    "Address": "123 Sukhumvit Rd, Bangkok",
+    "Email": "contact@globalexp.com",
+    "Phone": "021234567"
+}
+
+### Update supplier
+PUT http://localhost:3000/api/suppliers/1
+Content-Type: application/json
+
+{
+    "Name": "Global Export (Updated)",
+    "Contact": "Jane Doe",
+    "Address": "456 Rama 9, Bangkok",
+    "Email": "jane@globalexp.com",
+    "Phone": "0819998888"
+}
+
+### Delete supplier
+DELETE http://localhost:3000/api/suppliers/1
